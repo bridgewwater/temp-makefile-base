@@ -2,6 +2,7 @@
 
 # for subdirectory parameters
 ENV_TOP_DIR := $(shell pwd)
+
 # set proejct main subdirectory TODO replace module
 ENV_MAIN_MOUDLE_DIR := module
 
@@ -17,7 +18,6 @@ ENV_DIST_ARCH_DOCKER ?= amd64
 ENV_NEED_DEBUG=1
 # need open proxy 1 is need 0 is default
 ENV_NEED_PROXY=1
-
 # prototype: make_command(program, flags, msg, input)
 define print_root_set
 @if [ $(ENV_NEED_DEBUG) -eq 1 ]; \
@@ -73,5 +73,5 @@ helpRoot:
 	@echo "~> make clean -- clean folder or file"
 	@echo ""
 
-help: help$(ENV_MAIN_MOUDLE_DIR) help$(ENV_MAIN_MOUDLE_DIR)Dist helpRoot
+help: help$(ENV_MAIN_MOUDLE_DIR) helpRoot
 	@echo "    ... more info see makefile script ..."

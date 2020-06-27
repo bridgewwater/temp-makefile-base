@@ -43,7 +43,7 @@ $(ENV_INFO_FOLDER)Info:
 	@echo " ENV_INFO_APP_TAR_NAME -> $(ENV_INFO_APP_TAR_NAME)"
 	@echo "=> $(ENV_INFO_FOLDER) Info end"
 
-help$(ENV_INFO_FOLDER):
+help$(ENV_INFO_FOLDER): help$(ENV_INFO_FOLDER)Dist
 	@echo "=> this is sub project [ $(ENV_INFO_FOLDER) ] help"
 	@echo "~> make $(ENV_INFO_FOLDER)Info           -- show $(ENV_INFO_FOLDER) ENV_ info"
 	@echo ""
