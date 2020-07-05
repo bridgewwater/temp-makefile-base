@@ -35,6 +35,7 @@ clean$(ENV_INFO_FOLDER):
 $(ENV_INFO_FOLDER)Info:
 	$(call print_root_set)
 	@echo "=> $(ENV_INFO_FOLDER) Info start"
+	@echo " ENV_ROOT_NAME         -> $(ENV_ROOT_NAME)"
 	@echo " ENV_TOP_DIR           -> $(ENV_TOP_DIR)"
 	@echo " ENV_CURRENT_DIR       -> $(ENV_CURRENT_DIR)"
 	@echo " ENV_INFO_FOLDER       -> $(ENV_INFO_FOLDER)"

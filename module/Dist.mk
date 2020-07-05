@@ -108,6 +108,7 @@ $(ENV_INFO_FOLDER)DistCheckPathProd:
 $(ENV_INFO_FOLDER)DistInfo:
 	$(call print_root_set)
 	@echo "=> $(ENV_INFO_FOLDER) dist info start"
+	@echo " ENV_ROOT_NAME           -> $(ENV_ROOT_NAME)"
 	@echo " ENV_TOP_DIR             -> $(ENV_TOP_DIR)"
 	@echo " ENV_CURRENT_DIR         -> $(ENV_CURRENT_DIR)"
 	@echo " ENV_INFO_FOLDER         -> $(ENV_INFO_FOLDER)"

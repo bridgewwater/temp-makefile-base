@@ -6,6 +6,7 @@ ENV_TOP_DIR := $(shell pwd)
 # set proejct main subdirectory TODO replace module
 ENV_MAIN_MOUDLE_DIR := module
 
+ENV_ROOT_NAME ?= temp-makefile-base
 # must set! TODO set DIST_VERSION DIST_OS
 ENV_DIST_VERSION := v1.0.0
 ENV_DIST_OS := linux
