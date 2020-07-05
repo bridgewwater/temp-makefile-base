@@ -55,7 +55,10 @@ ENV_INFO_CLEAN_PATH_ALIAS_BUILD := build
 include module/Makefile
 include module/Dist.mk
 
-init:
+get-deps:
+	@echo "this project deps GNU make"
+
+init: get-deps
 	@echo "-> just check env or init project folder or file"
 	@echo ""
 
