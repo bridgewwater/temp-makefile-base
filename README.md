@@ -3,6 +3,7 @@
 # project info
 
 - project git at url https://github.com/bridgewwater/temp-makefile-base
+- base CI use travis language: c
 
 # run
 
