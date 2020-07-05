@@ -1,3 +1,9 @@
+[![TravisBuildStatus](https://api.travis-ci.org/bridgewwater/temp-makefile-base.svg?branch=master)](https://travis-ci.org/bridgewwater/temp-makefile-base)
+
+# project info
+
+- project git at url https://github.com/bridgewwater/temp-makefile-base
+
 # run
 
 finish TODOS

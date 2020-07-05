@@ -1,0 +1,39 @@
+# doc at https://docs.travis-ci.com/user/languages/c/
+language: c
+matrix:
+  include:
+    # works on Precise and Trusty
+    - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-7
+      env:
+        - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
+  allow_failures:
+    # works on Precise and Trusty
+    - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-7
+      env:
+        - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
+
+before_install:
+  - eval "${MATRIX_EVAL}"
+install:
+  - make get-deps
+
+script:
+  - make moduleInfo
+  - make moduleDistInfo
+  - make moduleDistCleanAll
+  - make help
+
+notifications:
+  email: false
